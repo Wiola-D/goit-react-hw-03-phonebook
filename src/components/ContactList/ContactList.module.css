@@ -1,7 +1,12 @@
+ul {
+  border: 1px ridge rgba(158, 158, 158, 0.6);
+  border-radius: 4px;
+}
 .listItem {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding: 5px;
 }
 .buttonDelete {
   width: 55px;
@@ -11,4 +16,9 @@
   font-size: 12px;
   margin-left: 10px;
   margin-right: 10px;
+}
+.liContact {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }

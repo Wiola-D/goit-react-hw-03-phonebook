@@ -6,9 +6,10 @@ export const ContactList = ({ contacts, filteredContacts, removeContact }) => {
       ) : (
         filteredContacts.map(contact => (
           <li className="listItem" key={contact.id}>
-            <p>
-              {contact.name}:{contact.number}
-            </p>
+            <div className="liContact">
+              <p>{contact.name}:</p>
+              <p>{contact.number}</p>
+            </div>
             <button
               className="buttonDelete"
               onClick={() => removeContact(contact.id)}
